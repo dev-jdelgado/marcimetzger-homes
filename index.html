@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Marci Metzger Homes</title>
+
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    </head>
+
+    <body class="">
+        <nav class="absolute top-0 left-0 w-full flex items-center sm:justify-between justify-center px-10 py-4 z-50">
+            <div class="logo">
+                <img src="/assets/marci-metzger-homes-white.png" class="h-20"/>
+            </div>
+            <div>
+            <button class="contact-us sm:block hidden bg-white hover:bg-transparent border-2 border-white font-semibold text-black hover:text-white px-8 py-3 rounded-3xl cinzel transition">
+                Contact Us
+            </button>
+            </div>
+        </nav>  
+
+
+        <section class="section1-parallax h-screen flex justify-end items-center flex-col sm:px-20 px-5 py-20 gap-2">
+            <div class="container sm:text-start text-center">
+                <p class="text-white lg:text-3xl md:text-2xl sm:text-xl text-xl animate-on-scroll animate-fade-up">
+                    Marci Metzger - The Ridge Realty Group    
+                </p>
+                <h1 class="text-white lg:text-8xl md:text-7xl sm:text-6xl text-5xl drop-shadow-lg cinzel animate-on-scroll animate-fade-up delay-300">
+                    Pahhrump Realtor
+                </h1>
+                <button class="contact-us sm:hidden block bg-white hover:bg-transparent border-2 border-white font-semibold text-black hover:text-white px-8 py-3 mt-4 rounded-3xl cinzel mx-auto transition">
+                    Contact Us
+                </button>
+            </div>    
+        </section>
+
+
+        <section class="container bg-white flex flex-col justify-center lg:px-20 px-5 pb-32 pt-24 mx-auto">
+            <h2 class="md:text-5xl sm:text-4xl text-3xl text-black drop-shadow-lg cinzel text-center mb-10 animate-on-scroll animate-fade-up">
+                Get it Sold
+            </h2>
+
+            <div class="flex md:flex-row flex-col lg:gap-10 gap-5 justify-between">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden w-full animate-on-scroll animate-zoom delay-200">
+                    <img src="/assets/get-it-sold-1.png" class="w-full h-56 object-cover">
+                
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold mb-2 text-center cinzel">
+                            Top Residential Sales Last 5 Years
+                        </h2>
+                        <p class="text-gray-700 text-sm sans-pro text-justify">
+                            We helped nearly 90 clients in 2021, and closed 28.5 million in sales! 
+                            Our team works hard everyday to grow and learn, so that we may continue to excel in our market. Our clients deserve our best, & we want to make sure our best is better every year.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden w-full animate-on-scroll animate-zoom delay-400">
+                    <img src="/assets/get-it-sold-2.png" class="w-full h-56 object-cover">
+                
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold mb-2 text-center cinzel">
+                            Don't Just List it...
+                        </h2>
+                        <p class="text-gray-700 text-sm sans-pro text-justify">
+                            Get it SOLD! We exhaust every avenue to ensure our listings are at the fingertips of every possible buyer, getting you top dollar for your home.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden w-full animate-on-scroll animate-zoom delay-600">
+                    <img src="/assets/get-it-sold-3.png" class="w-full h-56 object-cover">
+                
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold mb-2 text-center cinzel">
+                            Guide to Buyers
+                        </h2>
+                        <p class="text-gray-700 text-sm sans-pro text-justify">
+                            Nobody knows the market like we do. Enjoy having a pro at your service. Market analysis, upgrades lists, contractors on speed dial, & more!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section2-parallax flex items-center lg:px-20 px-7 py-20 gap-2">
+            <div class="container flex md:flex-row flex-col items-center mx-auto">
+                <div class="md:w-[50%] mb-4">
+                    <h2 class="lg:text-6xl md:text-5xl text-4xl text-white md:text-start text-center drop-shadow-lg cinzel animate-on-scroll animate-fade-left">
+                        Find Your Dream Home
+                    </h2>
+                </div>
+                <div class="md:w-[50%]">
+                    <form class="bg-white lg:px-8 md:px-6 px-5 py-10 rounded-lg">
+                        <h3 class="text-2xl text-black drop-shadow-lg mb-6 cinzel">Search Listings</h3>
+                        <div class="flex sm:flex-row flex-col lg:gap-8 gap-4 mb-6">
+                            <div class="w-full">
+                                <label>Location</label>
+                                <select id="location" name="location" class="w-full border border-gray-300 rounded px-2 py-2 bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="">Select Location</option>
+                                </select>
+                            </div>
+                            <div class="w-full">
+                                <label>Type</label>
+                                <select id="type" name="type" class="w-full border border-gray-300 rounded px-2 py-2 bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="">Select Type</option>
+                                </select>
+                            </div>                        
+                        </div>
+                        <div class="flex sm:flex-row flex-col lg:gap-8 gap-4 mb-6">
+                            <div class="w-full">
+                                <label>Sort By</label>
+                                <select id="sort" name="sort" class="w-full border border-gray-300 rounded px-2 py-2 bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="">Newest</option>
+                                    <option value="">Oldest</option>
+                                    <option value="">Least Expensive to Most</option>
+                                    <option value="">Most Expensive to Least</option>
+                                    <option value="">Bedrooms (Low to High)</option>
+                                    <option value="">Bedrooms (High to Low)</option>
+                                    <option value="">Bathrooms (Low to High)</option>
+                                    <option value="">Bathrooms (High to Low)</option>
+                                </select>
+                            </div>
+                            <div class="w-full flex lg:gap-5 gap-3">
+                                <div class="w-full">
+                                    <label>Bedrooms</label>
+                                    <select id="bedrooms" name="bedrooms" class="w-full border border-gray-300 rounded px-2 py-2 bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                        <option value="">Any Number</option>
+                                        <option value="">Studio</option>
+                                        <option value="">+1</option>
+                                        <option value="">+2</option>
+                                        <option value="">+3</option>
+                                        <option value="">+4</option>
+                                        <option value="">+5</option>
+                                        <option value="">+6</option>
+                                    </select>
+                                </div>  
+                                <div class="w-full">
+                                    <label>Baths</label>
+                                    <select id="baths" name="baths" class="w-full border border-gray-300 rounded px-2 py-2 bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                        <option value="">Any Number</option>
+                                        <option value="">+1</option>
+                                        <option value="">+2</option>
+                                        <option value="">+3</option>
+                                        <option value="">+4</option>
+                                        <option value="">+5</option>
+                                        <option value="">+6</option>
+                                    </select>
+                                </div>  
+                            </div>                        
+                        </div>
+                        <div class="flex sm:flex-row flex-col lg:gap-8 gap-4 mb-6">
+                            <div class="w-full">
+                                <label>Min Price</label>
+                                <input type="text" class="w-full border-b-2 border-gray-300 px-2 py-2 bg-white focus:rounded"/>
+                            </div>
+                            <div class="w-full">
+                                <label>Max Price</label>
+                                <input type="text" class="w-full border-b-2 border-gray-300 px-2 py-2 bg-white focus:rounded"/>
+                            </div>                        
+                        </div>
+                        <button class="w-full bg-gray-300 hover:bg-gray-500 text-black hover:text-white px-8 py-3 rounded-xl transition">
+                            SEARCH NOW
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="container bg-white flex justify-center items-center overflow-hidden mx-auto sm:py-20 py-12 lg:px-32">
+            <div class="w-full flex flex-wrap justify-between">
+                <div class="md:w-[25%] w-[50%] animate-on-scroll animate-zoom">
+                    <img src="assets/the-ridge.png" class="sm:h-32 h-24 mx-auto my-2"/>
+                </div>
+                <div class="md:w-[25%] w-[50%] animate-on-scroll animate-zoom delay-200">
+                    <img src="assets/equal-housing.png" class="sm:h-32 h-24 mx-auto my-2"/>
+                </div>
+                <div class="md:w-[25%] w-[50%] animate-on-scroll animate-zoom delay-400">
+                    <img src="assets/realtor.png" class="sm:h-32 h-24 mx-auto my-2"/>
+                </div>
+                <div class="md:w-[25%] w-[50%] animate-on-scroll animate-zoom delay-600">
+                    <img src="assets/pahrump-valley.png" class="sm:h-32 h-24 mx-auto my-2"/>
+                </div>
+            </div>
+        </section>
+        
+        <section class="bg-gray-900 flex flex-col justify-center items-center overflow-hidden pt-20 pb-40 lg:px-20 px-5">
+            <h3 class="md:text-5xl sm:text-4xl text-3xl text-white drop-shadow-lg mb-6 cinzel animate-on-scroll animate-fade-up">Photo Gallery</h3>
+            <div id="slider">
+                <input type="radio" name="slider" id="s1" checked>
+                <input type="radio" name="slider" id="s2">
+                <input type="radio" name="slider" id="s3">
+                <input type="radio" name="slider" id="s4">
+                <input type="radio" name="slider" id="s5">
+                <input type="radio" name="slider" id="s6">
+                <input type="radio" name="slider" id="s7">
+                
+                <label for="s1" id="slide1"><img src="assets/photo-gallery-1.png" alt=""></label>
+                <label for="s2" id="slide2"><img src="assets/photo-gallery-2.png" alt=""></label>
+                <label for="s3" id="slide3"><img src="assets/photo-gallery-3.png" alt=""></label>
+                <label for="s4" id="slide4"><img src="assets/photo-gallery-4.png" alt=""></label>
+                <label for="s5" id="slide5"><img src="assets/photo-gallery-5.png" alt=""></label>
+                <label for="s6" id="slide6"><img src="assets/photo-gallery-6.png" alt=""></label>
+                <label for="s7" id="slide7"><img src="assets/photo-gallery-7.png" alt=""></label>
+            </div>
+        </section>
+
+        <section class="container bg-white h-screen flex flex-col justify-center py-20 lg:px-20 px-5 mx-auto">
+            <h2 class="md:text-5xl sm:text-4xl text-3xl text-black drop-shadow-lg cinzel text-center mb-10 animate-on-scroll animate-fade-up">
+                Our Services
+            </h2>
+
+            <div class="container flex">
+                <div
+                    class="services-slide"
+                    style="background-image: url('assets/service-1.png');"
+                >
+                    <div class="text">
+                        <h3 class="cinzel sm:text-2xl text-lg">Real Estate Done Right</h3>
+                        <p class="sm:text-lg text-base">
+                            Nervous about your property adventure? Don’t be. Whether you're getting ready to buy or sell your residence, looking at investment properties, or just curious about the markets, our team ensures you get the best experience possible!
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="services-slide active"
+                    style="background-image: url('assets/service-2.png');"
+                >
+                    <div class="text">
+                        <h3 class="cinzel sm:text-2xl text-lg">Commercial & Residential</h3>
+                        <p class="sm:text-lg text-base">
+                            Large or small, condo or mansion, we can find it and get at the price that's right. Fixer-uppers? Luxury? We can help with all of it! We live, work, and play in this community. Happy to help you find where to put you hard-earned dollars.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="services-slide"
+                    style="background-image: url('assets/service-3.png');"
+                >
+                    <div class="text">
+                        <h3 class="cinzel sm:text-2xl text-lg">Rely on Expertise</h3>
+                        <p class="sm:text-lg text-base">
+                            If you have questions about affordability, credit, and loan options, trust us to connect you with the right people to get the answers you need in a timely fashion. We make sure you feel confident and educated every step of the way.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <footer class="bg-gray-900 flex pt-10 pb-10 lg:px-20 px-5">
+            <div class="w-full flex flex-col gap-16">
+                <div class="flex w-full sm:flex-row flex-col">
+                    <div class="sm:w-[50%] flex flex-col gap-10 mb-6">
+                        <div class="sm:mx-0 mx-auto">
+                            <img src="/assets/marci-metzger-homes-white.png" class="h-20"/>
+                        </div>
+                        <div class="flex gap-10 sm:mx-0 mx-auto">
+                            <i class="fa-brands fa-facebook text-white text-4xl"></i>
+                            <i class="fa-brands fa-twitter text-white text-4xl"></i>
+                            <i class="fa-brands fa-linkedin text-white text-4xl"></i>
+                            <i class="fa-brands fa-yelp text-white text-4xl"></i>
+                        </div>
+                        <button class="contact-us bg-white w-64 hover:bg-transparent border-2 border-white font-semibold text-black hover:text-white px-8 py-3 rounded-3xl cinzel transition sm:mx-0 mx-auto">
+                            Contact Us
+                        </button>
+                    </div>
+                    <div class="sm:w-[50%] text-white flex flex-col gap-10 mt-4 sm:text-start text-center">
+                        <h2 class="cinzel md:text-4xl text-2xl">Call or Visit Us</h2>
+                        <div>
+                            <h3 class="cinzel md:text-2xl text-xl">Marci Metzger - THE RIDGE REALTY GROUP</h3>
+                            <p class="md:text-lg text-base">3190 HW-160, Suite F, Pahrump, Nevada 89048, United States</p>
+                            <p class="md:text-lg text-base">(206) 919-6886</p>
+                        </div>
+                        <div>
+                            <h3 class="cinzel md:text-2xl text-xl">Office Hours</h3>
+                            <p class="md:text-lg text-base">Open daily 8:00 am - 7:00 pm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <iframe claas="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30635.68941226868!2d-115.97429779628072!3d36.18649970735912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c6398c31855555%3A0xca2c250302350734!2s3190%20NV-160%20Suite%20F%2C%20Pahrump%2C%20NV%2089048%2C%20USA!5e0!3m2!1sen!2sph!4v1755152842585!5m2!1sen!2sph" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="text-center text-white mt-10">
+                    Copyright © 2023 Marci METZGER Homes - All Rights Reserved
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Contact Us Modal -->
+        <div id="contactModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50 transition-opacity duration-300">
+            <div id="contactModalContent" class="bg-white rounded-xl w-11/12 md:w-4/5 xl:w-3/5 p-6 relative transform scale-95 opacity-0 transition-all duration-300">
+                <button id="closeModal" class="absolute top-3 right-3 text-gray-700 hover:text-gray-900 text-xl font-bold">&times;</button>
+                <h2 class="text-3xl font-bold cinzel mb-4 text-center">Contact Us</h2>
+                <div class="flex sm:flex-row flex-col justify-between gap-10">
+                    <div class="sm:w-[35%] text-center">
+                        <img class="rounded" src="assets/marcimetzger.png" />
+                        <h3 class="cinzel text-xl font-bold">MARCI METZGER</h3>
+                        <p>REALTOR FOR NEARLY 3 DECADES!</p>
+                        <p>206-919-6886</p>
+                    </div>
+                    <form class="flex flex-col gap-4 sm:w-[65%]">
+                        <input type="text" placeholder="Your Name" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <input type="email" placeholder="Your Email" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <textarea placeholder="Your Message" class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" rows="4"></textarea>
+                        <button type="submit" class="bg-gray-300 hover:bg-gray-500 text-black hover:text-white px-8 py-3 rounded-xl transition">Send Message</button>
+                    </form>
+                </div>
+                <a href="https://wa.me/12069196886" target="_blank" type="submit" class="w-full bg-green-500 hover:bg-green-700 text-black hover:text-white px-8 py-3 rounded-xl transition mt-6 flex gap-2 justify-center items-center">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    Send Message us on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
